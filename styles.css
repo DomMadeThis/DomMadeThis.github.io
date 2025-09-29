@@ -1,9 +1,15 @@
 body {
     background: dimgrey;
-    font-family: Arial, Helvetica, sans-serif
-
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
 }
 h1 {
     color:lightpink;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p {
     text-align: center;
 }
