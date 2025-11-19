@@ -26,5 +26,13 @@ h2 {
 p {
     color:black;
     text-align: center;
-    
+    <section class="project">
+<a href="https://github.com/">
+<h3>Algorithmic Design Final Project</h3>
+</a>
+<a href="https://github.com/">
+<img src="images/algorithmic_design.png">
+</a>
+<p>Brief description of the repo</p>
+</section>
 }
