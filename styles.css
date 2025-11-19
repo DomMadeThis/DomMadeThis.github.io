@@ -24,13 +24,21 @@ h2 {
     font-style: italic;
 }
 .projects { 
-    display:flex; 
-    flex-wrap:wrap; } /* condensed to save space */
+    /* make the blobs float side-by-side */
+	display:flex; 
+	flex-wrap:wrap;  
+} 
+.projects h2 {
+    /* display the h2 on its own line, not with the section blobs */
+	width: 100%;
+}
 .project {
+    /* form the section blobs */
     width: 30%;
     margin: 10px;
     padding: 20px 10px;
-    background: white; /* pick a color */
+    background: lightslategray;
+    /* rounded corners for the blobs */
     border-radius: 25%;
 }
 p {
