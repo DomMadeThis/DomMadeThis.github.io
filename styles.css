@@ -62,17 +62,15 @@ body {
     color: #f1f1f1; /* light text for contrast */
 }
 
-
-
 /* Headings */
 h1 {
-    color: #0b2447; /* deep navy */
+    color: #d4af37; /* gold */
     text-align: center;
     font-weight: bold;
 }
 
 h2 {
-    color: #0b2447;
+    color: #d4af37; /* gold */
     text-align: center;
     font-style: italic;
 }
@@ -100,11 +98,8 @@ p {
     margin: 10px;
     padding: 20px 15px;
     border-radius: 16px;
-    
-    /* Navy with gold border */
     border: 2px solid #d4af37; /* gold */
     box-shadow: 0 3px 8px rgba(0, 0, 30, 0.12);
-
     transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
 }
 
@@ -128,9 +123,7 @@ p {
     height: auto;
     margin: 10px auto;
     border-radius: 10px;
-
-    /* Navy border with subtle gold glow */
-    border: 2px solid #0b2447;
+    border: 2px solid #0b2447; /* navy */
 }
 
 /* Project text */
