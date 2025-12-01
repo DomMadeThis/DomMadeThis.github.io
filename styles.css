@@ -1,4 +1,4 @@
-body {
+/* body {
     background: rgb(255, 255, 255);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 40px;
@@ -52,4 +52,99 @@ p{
 .project p {
     text-align: center;
     margin: 15px;
+} */
+
+body {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0, #a1c4fd, #c2e9fb);
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    color: #333;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    color: #7b2cbf;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #444;
+    text-align: center;
+    font-style: italic;
+}
+
+p {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.project {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.project::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 3px;
+    background: linear-gradient(135deg, #ff00cc, #3333ff, #00dbde, #fc00ff);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.22);
+}
+
+.project h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #7b2cbf;
+    font-weight: 600;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    padding: 3px;
+}
+
+.project p {
+    margin-top: 12px;
+    font-size: 0.95rem;
 }
