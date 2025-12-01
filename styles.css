@@ -56,21 +56,20 @@ p{
  */
 
  body {
-    background: #f5f7fa;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6fa;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 40px;
-    color: #333;
+    color: #1a1a1a;
 }
 
 h1 {
-    color: #6a2ca0;
+    color: #0a2a55; /* deep navy */
     text-align: center;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: bold;
 }
 
 h2 {
-    color: #444;
+    color: #0a2a55;
     text-align: center;
     font-style: italic;
 }
@@ -79,6 +78,7 @@ p {
     text-align: center;
 }
 
+/* Projects layout */
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -86,32 +86,45 @@ p {
     gap: 25px;
 }
 
+.projects h2 {
+    width: 100%;
+}
+
+/* Individual project card */
 .project {
     width: 300px;
-    background: white;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    background: #ffffff;
+    margin: 10px;
+    padding: 20px 15px;
+    border-radius: 16px;
+    border: 2px solid #0a2a55;
+    box-shadow: 0 3px 8px rgba(0, 0, 30, 0.12);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    box-shadow: 0 6px 16px rgba(0, 0, 30, 0.18);
 }
 
 .project h3 {
     text-align: center;
+    color: #0a2a55;
     margin-bottom: 10px;
-    color: #6a2ca0;
 }
 
+/* Project image */
 .project img {
     width: 100%;
-    border-radius: 12px;
-    border: 2px solid #6a2ca0;
+    height: auto;
+    margin: 10px auto;
+    border: 2px solid #0a2a55;
+    border-radius: 10px;
+    display: block;
 }
 
+/* Project description */
 .project p {
-    margin-top: 12px;
+    text-align: center;
+    margin: 15px;
 }
