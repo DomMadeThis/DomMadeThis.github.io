@@ -79,6 +79,10 @@ p {
     text-align: center;
     color: #d4af37; /* gold */
 }
+a {
+  color: #d4af37; /* pick any color */
+  font-style: bold;
+}
 
 /* Projects section */
 .projects {
